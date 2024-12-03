@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Acquisitions</title>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css"
+  />
+  <style>
+    .book-container {
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 10px;
+      display: inline-block;
+      text-align: center;
+    }
+    .book-container img {
+      max-width: 150px;
+      height: auto;
+    }
+    .carousel-control {
+      background-image: none;
+    }
+    .carousel-inner > .item {
+      transition: 0.6s ease-in-out left;  /* Smooth transition for sliding */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">New Acquisitions</h1>
+    <div id="book-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="book-container">
+            <a href="https://example.com/book1">
+              <img src="/New_Books/Ansel's_Pharmaceutical.jpg" alt="book1" />
+            </a>
+          </div>
+          <div class="book-container">
+            <a href="https://example.com/book1">
+              <img src="/New_Books/Ansel's_Pharmaceutical.jpg" alt="book1" />
+            </a>
+          </div>
+          <div class="book-container">
+            <a href="https://example.com/book1">
+              <img src="/New_Books/Ansel's_Pharmaceutical.jpg" alt="book1" />
+            </a>
+          </div>
+          <div class="book-container">
+            <a href="https://example.com/book1">
+              <img src="/New_Books/Ansel's_Pharmaceutical.jpg" alt="book1" />
+            </a>
+          </div>
+        </div>
+        <!-- Additional items (you can copy and modify the structure) -->
+        <div class="item">
+          <div class="book-container">
+            <a href="https://example.com/book2">
+              <img src="/New_Books/Another_Book.jpg" alt="book2" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#book-carousel" data-slide="prev">
+        <i class="icon-chevron-left"></i>
+      </a>
+      <a class="right carousel-control" href="#book-carousel" data-slide="next">
+        <i class="icon-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script>
+    // Activate the carousel
+    $(document).ready(function(){
+      $('#book-carousel').carousel({
+        interval: 3000,  // Set sliding interval in milliseconds
+        pause: 'hover'   // Pause the carousel on hover
+      });
+    });
+  </script>
+</body>
+</html>
